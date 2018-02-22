@@ -80,12 +80,12 @@ class Game(object):
 
     def health_up(self, change):
         if change < 0:
-            change -= self.armor
+            change += self.armor
         self.health += change
 
     def endurance_up(self, change):
         if change < 0:
-            change -= self.weapon
+            change += self.weapon
         self.endurance += change
 
     def weapon_up(self, change=1):
