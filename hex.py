@@ -114,12 +114,16 @@ class Game(object):
     def room_desc(self, n=None):
         if n is None:
             n = self.location
-        if n == 1 or n == 3:
-            return "in an empty {}".format(random.choice(['room', 'corridor']))
+        if n == 1:
+            return "in an empty corridor"
         elif n == 2:
             return "in a trap room"
-        elif n == 4 or n == 5:
-            return "in a monster {}".format(random.choice(['room', 'corridor']))
+        elif n == 3:
+            return "in an empty room"
+        elif n == 4:
+            return "in a monster room"
+        elif n == 5:
+            return "in a monster corridor"
         elif n == 6:
             return "in a treasure room"
         elif n == 7:
