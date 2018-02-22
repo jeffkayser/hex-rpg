@@ -1,5 +1,5 @@
-# -=- coding: utf-8 -=-
 #!/usr/bin/env python
+# -=- coding: utf-8 -=-
 
 """
 Python command-line implementation of Hex by Jeff Moore.
